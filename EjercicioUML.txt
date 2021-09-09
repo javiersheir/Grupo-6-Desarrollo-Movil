@@ -13,3 +13,5 @@ Un distribuidor tiene una sola marca F
 
 -Muchas marcas tienes muchos distribuidores
 -Muchas marcas tienes muchos distribuidores
+
+Informacion 1
