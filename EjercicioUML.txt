@@ -1,0 +1,15 @@
+Un producto tiene muchas marcas F
+Una marca tiene muchos productos V
+Una marca tiene un solo producto F
+Un producto tiene una sola marca V
+
+-Muchas marcas tienes muchos productos
+-Muchas marcas tienes muchos productos
+
+Un distribuidor tiene muchas marcas V
+Una marca tiene muchos distribuidores V
+Una marca tiene un solo distribuidor F
+Un distribuidor tiene una sola marca F
+
+-Muchas marcas tienes muchos distribuidores
+-Muchas marcas tienes muchos distribuidores
