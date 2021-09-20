@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+
+    </head>
+    <body>
+        
+        <strong><H3>Universidad Autónoma de Bucaramanga</H3>
+            <H4>Programa de salud 
+            <br>
+            <br>
+            Formulario para cálculo de IMC</H4> </strong>
+            
+        <form action="recomendaciones.html" method="get" target="_top" >
+            <label >Nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <br>
+            <label>Cédula</label>
+            <input type="number" name="cedula" min="1000000" max="99999999999" placeholder="Cédula">
+            <br>
+            <label>Teléfono</label>
+            <input type="number" name="telefono" min="1000000" max="9999999999" placeholder="Teléfono">
+            <br>
+            <label>Edad</label>
+            <input type="number" name="edad" step="1" min="1" max="100" >
+            <br>
+            <label>Género:</label>
+            <br>
+            <input type="radio" name="genero" id="hombre" value="Masculino"/><label for="hombre">Masculino</label> 
+            <input type="radio" name="genero" id="mujer" value="Femenino"/> <label for="mujer">Femenino</label>
+            <input type="radio" name="genero" id="otro" value="Otro"/> <label for="otro">Otro</label>
+            <br>
+            <label>Programa:</label>
+            <select name="programa" >
+                <option value="1">Pregrado</option>
+                <option value="1">Posgrado</option>
+                <option value="1">Eduación continua</option>
+            </select>
+            <br>
+            <label></label>Peso</label>
+            <input type="number" name="peso" step="0.1" min="1" max="300" >
+            <label>Kg</label>
+            <br>
+            <label></label>Estatura</label>
+            <input type="number" name="estatura" step="0.01" min="1" max="2.5" >
+            <label>m</label>
+            <br>
+            <br>
+            <input type="reset" name="limpiar" Value ="Limpiar"/>
+            <input type="submit" name="enviar" Value ="Enviar"/>
+        </form>
+
+        <H6>Desarrolladores:
+
+            <li>Scrum Master: Melissa Banda Genes</li>
+            <li>Product Owner: Steven Vanegas Caicedo</li>
+            <li>Scrum Team: Luz Daisy Perez</li>
+            <li>Scrum Team: Javier Sheir Herrera</li>
+            <li>Scrum Team: Jean Paul Nieva Quijano</li>
+        </H6>
+    </body>
+
+</html>
