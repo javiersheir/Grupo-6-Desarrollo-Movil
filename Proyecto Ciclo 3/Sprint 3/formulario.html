@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<link rel="shortcut icon" href="unab.jpg">
+    	<link rel="stylesheet" href="style.css">
         <title>Formulario</title>
 
     </head>
     <body>
-        
+        <center>
         <strong><H3>Universidad Autónoma de Bucaramanga</H3>
             <H4>Programa de salud 
             <br>
-            <br>
             Formulario para cálculo de IMC</H4> </strong>
-            
+            </center>
         <form action="recomendaciones.html" method="get" target="_top" >
             <label >Nombre</label>
             <input type="text" name="nombre" placeholder="Nombre completo">
@@ -33,6 +34,7 @@
             <br>
             <label>Programa:</label>
             <select name="programa" >
+            	<option value="0">Seleccionar</option>
                 <option value="1">Pregrado</option>
                 <option value="1">Posgrado</option>
                 <option value="1">Eduación continua</option>
@@ -41,11 +43,11 @@
             <label></label>Peso</label>
             <input type="number" name="peso" step="0.1" min="1" max="300" >
             <label>Kg</label>
-            <br>
+         
             <label></label>Estatura</label>
             <input type="number" name="estatura" step="0.01" min="1" max="2.5" >
             <label>m</label>
-            <br>
+    
             <br>
             <input type="reset" name="limpiar" Value ="Limpiar"/>
             <input type="submit" name="enviar" Value ="Enviar"/>
