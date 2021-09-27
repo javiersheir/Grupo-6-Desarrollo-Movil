@@ -1,6 +1,6 @@
 
 form{
-  width:600px;
+  width:300px;
   padding:16px;
   border-radius:50px;
   margin:auto;
@@ -26,29 +26,29 @@ form input[type="number"]{
 
 form input[type="submit"]
 {
-  width: 100%;
+  width: 50%;
   padding:8px 16px;
   margin-top:10px;
-  border:1px solid #000;
+  border:1px solid rgb(0,0,0);
   border-radius:5px;
   display:block;
   color:#fff;
-
-  background-color:#000;
+  
+  background-color:rgb(56, 75, 160);
 } 
 
 form input[type="submit"]:hover{
   cursor:pointer;
 }
 form input[type="reset"]{
-  width:100%;
+  width:50%;
   padding:8px 16px;
   margin-top:10px;
   border:1px solid #000;
   border-radius:5px;
   display:block;
   color:#fff;
-  background-color:#000;
+  background-color:rgb(56, 75, 160);
 } 
 select {
      background-color:#f6f6f6;
@@ -66,5 +66,5 @@ textarea{
   background-color:#f6f6f6;     
   margin:8px 0;
   /*resize: vertical | horizontal | none | both*/
-  resize:none;
+  resize:vertical;
   
