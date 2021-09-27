@@ -1,0 +1,40 @@
+/*
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    local-vars: (
+      "bg-opacity": 1
+    ),
+    values: map-merge(
+      $utilities-bg-colors,
+      (
+        "transparent": transparent
+      )
+    )
+  )
+);
+*/
+form {
+    width:400px;
+    border: 1px transparent;
+    background-color: rgb(69, 209, 228);
+    border-radius:50px;
+    margin-block: 10px;
+    padding: 50px;
+}
+/*
+div{
+
+    border: 1px solid;
+}
+*/
+/*
+form{
+    width:600px;
+    padding:16px;
+    border-radius:50px;
+    margin:auto;
+    background-color:rgb(31, 146, 146);
+  }*/
+  

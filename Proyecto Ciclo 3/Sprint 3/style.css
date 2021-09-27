@@ -1,10 +1,10 @@
 
 form{
-  width:300px;
+  width:600px;
   padding:16px;
-  border-radius:10px;
+  border-radius:50px;
   margin:auto;
-  background-color:#ccc;
+  background-color:rgb(31, 146, 146);
 }
 
 form label{
