@@ -1,0 +1,56 @@
+/*
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    local-vars: (
+      "bg-opacity": 1
+    ),
+    values: map-merge(
+      $utilities-bg-colors,
+      (
+        "transparent": transparent
+      )
+    )
+  )
+);
+*//*
+form {
+    width:500px;
+    border:10px solid rgb(70, 23, 97);
+    background-color: rgb(0, 174, 199);
+    border-radius:50px;
+    margin-block: 10px;
+    padding: 50px;
+}
+*/
+div{
+
+    /*border: 1px solid;*/
+}
+#titulo{
+
+    padding-top: 2px;
+    color: rgb(56, 153, 160);
+    
+}
+
+#botonIngresar{
+    /*background:rgb(0,51,160)*/
+    /*background-color:rgb(198, 216, 255)*/
+}
+
+/*
+form{
+    width:600px;
+    padding:16px;
+    border-radius:50px;
+    margin:auto;
+    background-color:rgb(31, 146, 146);
+  }*/
+  
+
+
+  .p-3 {
+    padding: $spacer !important;
+  }

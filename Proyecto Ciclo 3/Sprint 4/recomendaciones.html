@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="unab.jpg">
+        <link rel="stylesheet" href="style.css">
+        <title>Resultado</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" >
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(dibujarTorta);
+
+            function generarData(){
+                let tabladatos = new google.visualization.DataTable();
+                tabladatos.addColumn('string','clasificacion');
+                tabladatos.addColumn('number','total')
+                tabladatos.addRows([
+                    ['Bajo peso', 251],
+                    ['Peso normal', 682],
+                    ['Sobrepeso', 105],
+                    ['Obesidad', 59]
+                ]);
+                return tabladatos;
+
+            }
+
+            function dibujarTorta() {
+
+                let data = generarData();
+                let grafico = new google.visualization.PieChart(document.getElementById('contenedorGrafico'));
+                
+                var opciones = {'title':'Clasificación de IMC',
+                       'width':300,
+                       'height':250,
+                        is3D: true
+
+                    };
+                       
+                grafico.draw(data,opciones);
+                
+            }
+
+        </script>
+    </head>
+    <body>
+          <center>
+        <strong><H3>Universidad Autónoma de Bucaramanga</H3>
+            <H4>Programa de salud </H4> </strong>
+
+              </center>
+        <form action="formulario.html" method="get" target="_top" >
+            <label ><strong>Datos registrados:</strong></label>
+            <br>
+            <br>
+            <label >Nombre:</label>
+            <input type="text" value="Mostrar el nombre" disabled>
+            <br>
+            <label >Cédula:</label>
+            <input type="text" value="Mostrar la cédula" disabled>
+            <br>
+            <label >Edad:</label>
+            <input type="text" value="Mostrar la edad" disabled>
+            <br>
+            <label >Teléfono:</label>
+            <input type="text" value="Mostrar el teléfono" disabled>
+            <br>
+            <br>
+            <label ><strong>Resultado:</strong></label>
+            <br>
+            <br>
+            <label >IMC:</label>
+            <input type="text" value="Mostrar el IMC" disabled>
+            <br>
+            <label >Clasificación:</label>
+            <input type="text" value="Mostrar clasificación" disabled>
+            <br>
+            <label >Recomendaciones:</label>
+            <br>
+            <input type="text" name="recomendaciones" value="Mostrar recomendaciones" disabled>
+            
+            <br>
+            <br>
+            <label >Estadísticas:</label>
+            <br>
+            
+            <br>
+            <br>
+            <div id="contenedorGrafico" align="center" style="width: 300px; height: 250px;"></div>
+
+            <br>
+            <div align="center" > 
+            <input type="submit" name="regresar" Value ="Regresar"/>
+            </div>
+
+
+        </form>
+
+        <H6>Desarrolladores:
+
+            <li>Scrum Master: Melissa Banda Genes</li>
+            <li>Product Owner: Steven Vanegas Caicedo</li>
+            <li>Scrum Team: Luz Daisy Perez</li>
+            <li>Scrum Team: Javier Sheir Herrera</li>
+            <li>Scrum Team: Jean Paul Nieva Quijano</li>
+        </H6>
+    </body>
+
+</html>
